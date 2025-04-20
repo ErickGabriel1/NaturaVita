@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcf4e2;
+    margin: 0;
+    padding: 0;
+}
+
+.container-carrinho {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fcf4e2;
+
+    width: 1000px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fcf4e2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #535632;
+    color: #fcf4e2;
+}
+
+.img-produto {
+    width: 80px;
+    border-radius: 6px;
+}
+
+.total {
+    text-align: right;
+    padding: 20px 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #9b995d;
+}
+
+.btn-finalizar {
+    display: block;
+    margin: 20px auto;
+    background-color: #535632;
+    color: #fcf4e2;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn-finalizar:hover {
+    background-color: #535632;
+}
+
+.btn-remover {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 0.9em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-remover:hover {
+    background-color: #c0392b;
+}
+
+.btn-voltar {
+    display: block;
+    margin: 20px auto;
+    color: #fcf4e2;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+}
