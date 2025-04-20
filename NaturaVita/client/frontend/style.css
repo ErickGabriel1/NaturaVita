@@ -1,0 +1,606 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0%;
+    display: block;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER*/
+.logo-header {
+    margin: 5px;
+}
+
+header {
+    background-color: #535632;
+
+    /* HEADER SEARCH*/
+}
+header i {
+    color: #fcf4e2;
+}
+
+.search {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    border: 1px solid #fcf4e2;
+    border-radius: 5px;
+    padding: 5px;
+
+
+
+}
+
+.search-txt-btn {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.search-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+
+}
+
+.search-btn:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+
+}
+
+.search-txt {
+    background: none;
+    border: none;
+    color: #fcf4e2;
+    width: 20vw;
+}
+
+.nav-list li:hover{
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+a {
+    color: #fcf4e2;
+    text-decoration: none;
+}
+
+/* HEADER NAVBAR*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+
+
+}
+
+main {
+    background-size: cover;
+    height: 92vh;
+
+}
+
+.nav-list {
+    list-style: none;
+    display: inline-flex
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-right: 40px;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 3px;
+    background: #fcf4e2;
+    margin: 8px;
+
+}
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 30vw;
+        height: 92vh;
+        flex-direction: column;
+        background: #fcf4e2;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.2s ease-in;
+        z-index: 10;
+    }
+    
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+        text-align: center;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+    
+    
+
+}
+
+.nav-list.active {
+    transform: translateX(0);
+    background-color: #535632;
+
+
+}
+
+
+@keyframes navLinkFade {
+    from {
+
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+/* FOOTER*/
+
+footer {
+    background-color: #535632;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 5px solid #fcf4e2;
+    text-align: center;
+    align-items: center;
+    border: 0;
+}
+
+footer h2,
+footer p,
+footer a,
+footer span {
+    color: #fcf4e2;
+}
+
+footer h2 {
+    font-weight: 400;
+    color: #535632;
+}
+
+footer ul {
+    padding: 0;
+}
+
+.footer-box {
+    width: 31%;
+    padding: 0%;
+    float: left;
+}
+
+footer .wrapper::after {
+    width: 80%;
+
+}
+
+.company-footer h2,
+.company-footer p {
+    margin-bottom: 20px;
+}
+
+.footer-list li {
+    margin-bottom: 15px;
+}
+
+.footer-list a {
+    translate: .5s;
+}
+
+    .footer-list i{
+        color: #fcf4e2;
+        font-size: 50px;
+    }
+    .footer-list i:hover{
+        opacity: 0.5;
+        transition: 0.2s;
+    }
+
+
+.footer-list a:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.footer-list li:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.articles-footer {
+    width: 80%;
+}
+
+.footer-list.footer-article-list span {
+    display: block;
+    float: none;
+}
+
+.redes li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.footer-list li span {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #3b2f3d;
+    margin: 0;
+}
+
+.footer-bottom p {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.wrapper {
+    display: inline-block;
+}
+
+/* CSS LOGIN */
+
+.g-recaptcha {
+
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+
+.form-login {
+    background-color: #fcf4e2;
+    border-radius: 15px;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.253);
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+.form-login input {
+    margin: 10px 10px;
+    width: calc(100% - 20px);
+}
+
+.input-digit {
+
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+.input-submit {
+
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    background-image: url(img/background.jpg);
+    background-color: #368F8B;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+
+}
+
+
+.input-nome-sobrenome {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form-senha-confirm {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-nascimento {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin: 10px 0;
+    margin: 10px 10px;
+    width: calc(100% - 20px);
+}
+
+.input-nascimento input {
+    border: none;
+    color: rgb(114, 114, 114);
+}
+
+.input-nascimento p {
+    color: rgb(134, 134, 134);
+    font-size: 13px;
+    margin: 0%;
+
+}
+
+.politicapriv {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.politicapriv input {
+    width: 3%;
+}
+
+.politicapriv p a {
+    color: #535632;
+}
+
+.politicapriv p a:hover {
+    color: #368F8B;
+    transition: 0.2s;
+    opacity: 0.9;
+}
+
+.termosuso {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.termosuso input {
+    width: 3%;
+}
+
+.termosuso p a {
+    color: #535632;
+}
+
+.termosuso p a:hover {
+    color: #368F8B;
+    transition: 0.2s;
+    opacity: 0.9;
+}
+
+
+.input-submit:hover {
+    background-color: #160F29;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+
+.link {
+    color: rgba(37, 37, 37, 0.603);
+    text-decoration: none;
+
+}
+
+.link:hover {
+    color: #ccc;
+}
+
+
+
+/*SLIDER*/
+
+
+.slideshow-container {
+    max-width: 100vw;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -60px;
+    padding: 16px;
+    color: #fcf4e2;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+
+    opacity: 0.5;
+}
+
+/* Caption text */
+.dot-box {
+
+    position: absolute;
+    text-align: center;
+    margin-top: -30px;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #fcf4e2;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+
+}
+
+.active,
+.dot:hover {
+    background-color: #9b995d;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.preco {
+    display: block;
+    font-size: 1.1em;
+    color: #535632;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-carrinho {
+    background-color: #535632;
+    color: #fcf4e2;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-carrinho:hover {
+    background-color: #535632;
+}
+
+.produtos-naturais {
+    padding: 60px 20px;
+    background-color: #fcf4e2;
+    text-align: center;
+}
+
+.titulo-sessao {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #9b995d;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produto {
+    background-color: #fcf4e2;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.produto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    font-size: 1.3em;
+    color: #535632;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 1em;
+    color: #555;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
