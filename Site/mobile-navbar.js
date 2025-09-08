@@ -14,16 +14,15 @@ class MobileNavbar{
         this.navLinks.forEach((link) => {
         
             link.style.animation
-               ? (link.style.animation = "")
-               : (link.style.animation = 'navLinkFade 0.5s ease forwards 0.2s');
+                ? (link.style.animation = "")
+                : (link.style.animation = 'navLinkFade 0.5s ease forwards 0.2s');
         });
 
     }
-   
     handleClick() {
 
         this.navList.classList.toggle(this.activeClass);
-        this.animateLinks();
+            this.animateLinks();
     }
 
     addClickEvent() {
@@ -33,7 +32,7 @@ class MobileNavbar{
     
     init(){
         if (this.mobileMenu){
-          this.addClickEvent();
+            this.addClickEvent();
         }
         return this;
     }
